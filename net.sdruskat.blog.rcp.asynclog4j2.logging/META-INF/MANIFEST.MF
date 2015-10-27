@@ -2,7 +2,7 @@ Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
 Bundle-Name: Logging Plug-in
 Bundle-SymbolicName: net.sdruskat.blog.rcp.asynclog4j2.logging
-Bundle-Version: 1.0.0.qualifier
+Bundle-Version: 1.0.0
 Bundle-ClassPath: .
 Bundle-Vendor: Stephan Druskat (sdruskat.net)
 Export-Package: org.apache.logging.log4j,
@@ -58,3 +58,4 @@ Export-Package: org.apache.logging.log4j,
  org.apache.logging.log4j.status,
  org.apache.logging.log4j.util
 Bundle-RequiredExecutionEnvironment: JavaSE-1.7
+Require-Bundle: com.lmax.disruptor;bundle-version="3.3.2"
