@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+
+   <extension
+         id="net.sdruskat.blog.rcp.asynclog4j2.application"
+         point="org.eclipse.core.runtime.applications">
+      <application>
+         <run
+               class="net.sdruskat.blog.rcp.asynclog4j2.Application">
+         </run>
+      </application>
+   </extension>
+   <extension
+         point="org.eclipse.ui.perspectives">
+      <perspective
+            name="RCP Perspective"
+            class="net.sdruskat.blog.rcp.asynclog4j2.Perspective"
+            id="net.sdruskat.blog.rcp.asynclog4j2.perspective">
+      </perspective>
+   </extension>
+   <extension
+         id="product"
+         point="org.eclipse.core.runtime.products">
+      <product
+            application="net.sdruskat.blog.rcp.asynclog4j2.application"
+            name="Asynchronous Log4j 2 in Eclipse RCP">
+         <property
+               name="appName"
+               value="Asynchronous Log4j 2 in Eclipse RCP">
+         </property>
+      </product>
+   </extension>
+
+</plugin>

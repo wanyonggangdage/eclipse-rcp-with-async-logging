@@ -1,0 +1,11 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Asynchronous Log4j 2 Eclipse RCP Application
+Bundle-SymbolicName: net.sdruskat.blog.rcp.asynclog4j2;singleton:=true
+Bundle-Version: 1.0.0.qualifier
+Bundle-Activator: net.sdruskat.blog.rcp.asynclog4j2.Activator
+Bundle-Vendor: Stephan Druskat (sdruskat.net)
+Require-Bundle: org.eclipse.ui,
+ org.eclipse.core.runtime
+Bundle-RequiredExecutionEnvironment: JavaSE-1.7
+Bundle-ActivationPolicy: lazy
