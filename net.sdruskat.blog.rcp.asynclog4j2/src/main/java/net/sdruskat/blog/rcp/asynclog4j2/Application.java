@@ -21,7 +21,12 @@ public class Application implements IApplication {
 	public Object start(IApplicationContext context) throws Exception {
 		Display display = PlatformUI.createDisplay();
 		
-		logger.error("Works!");
+		logger.debug("Asynchronously logged DEBUG message.");
+		logger.error("Asynchronously logged ERROR message.");
+		logger.fatal("Asynchronously logged FATAL message.");
+		logger.info("Asynchronously logged INFO message.");
+		logger.trace("Asynchronously logged TRACE message.");
+		logger.warn("Asynchronously logged WARN message.");
 		
 		try {
 			int returnCode = PlatformUI.createAndRunWorkbench(display, new ApplicationWorkbenchAdvisor());
